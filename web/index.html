@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" id="vp" content="width=device-width, initial-scale=1">
+	<title>Monier Outline</title>
+	<script src="scripts/jquery-1.6.4.min.js"></script>
+	<script src="scripts/query.mobile-1.0rc1.min.js"></script>
+	<script src="scripts/tt_vis.js"></script>
+	<link rel="stylesheet"  href="styles/themes.css" />
+	<link rel="stylesheet" href="styles/jquery.mobile-1.0rc1.min.css" />
+	<link rel="stylesheet" href="scripts/jquery.pnotify.default.css" />
+	<link rel="stylesheet" href="styles/tt_vis.css" />
+	<link rel="stylesheet" href="styles/swatch.css" />
+	<script src="scripts/jquery.pnotify.min.js"></script>
+</head> 
+  <body>
+	<div id="wrap">
+	<div id="main">
+		<div id="logo" class="logo"></div>
+			
+</div>	
+	
+		<div id="stage" class="stage">
+
+		</div>
+		<div id="startpage" class="startpage">startpage</div>
+		<div id="s_0" class="swatchbin">
+			<div id="s_1" class="swatchlist">
+				<button id="crt_1" class="mainbut mainbut_on">Choose A Brick Range</button>
+				<button id="crc_1" class="mainbut mainbut_on">Choose A Colour - Showing Horizon Range</button>
+				<button id="crx_1" class="mainbut close" onClick="paneloff()"></button>
+				<div id="s_1_0" class="swatch">
+					<button id="sw_1_1" onClick="sel('s_1_1','s_1_0','Choose A Colour - Showing Standard Range')">Standard</button>
+					<button id="sw_1_4" onClick="sel('s_1_2','s_1_0','Choose A Colour - Showing Mezzo Range')">Mezzo</button>
+					<button id="sw_1_2" onClick="sel('s_1_3','s_1_0','Choose A Colour - Showing Presto Range')">Presto</button>
+					<button id="sw_1_5" onClick="sel('s_1_4','s_1_0','Choose A Colour - Showing Block Range')">Block</button>
+					<button id="sw_1_3" onClick="sel('s_1_5','s_1_0','Choose A Colour - Showing Metro Range')">Metro</button>
+					<button id="sw_1_8" onClick="sel('s_1_5','s_1_0','Choose A Colour - Showing Metro Range')">[No Bricks]</button>
+				</div>
+				<div id="s_1_1" class="swatch">
+					<button id="sw_195">Arctic White</button>
+					<button id="sw_171">Bianca</button>
+					<button id="sw_175">Desert Sand</button>
+					<button id="sw_177">Golden Buff</button>
+					<button id="sw_170">Harvest Cream</button>
+					<button id="sw_200">Heatherstone</button>
+					<button id="sw_346">Iron</button>
+					<button id="sw_198">Kiln Run Brown</button>
+					<button id="sw_188">Kiln Run Red</button>
+					<button id="sw_187">Nickel</button>
+					<button id="sw_165">Okura Cream</button>
+					<button id="sw_166">Omaha</button>
+					<button id="sw_181">Palladium</button>
+					<button id="sw_189">Red</button>
+					<button id="sw_192">Redbourne</button>
+					<button id="sw_176">Rumbled Buff</button>
+					<button id="sw_190">Rumbled Red</button>
+					<button id="sw_179">Rumbled Grey</button>
+					<button id="sw_201">Saddle Brown</button>
+					<button id="sw_178">Sahara</button>
+					<button id="sw_191">Smooth Red Blend</button>
+					<button id="sw_199">Soapstone</button>
+					<button id="sw_347">Steel</button>
+				</div>
+				<div id="s_1_2" class="swatch">
+					<button id="sw_193">Albacore</button>
+					<button id="sw_180">Hoki</button>
+					<button id="sw_183">Mako</button>
+					<button id="sw_173">Nautilus</button>
+					<button id="sw_182">Oyster</button>
+				</div>
+				<div id="s_1_3" class="swatch">
+					<button id="sw_184">Cavalli Grey</button>
+					<button id="sw_196">Kawau Cream</button>
+					<button id="sw_168">Matakana Cream</button>
+					<button id="sw_194">Skipjack</button>
+				</div>
+				<div id="s_1_4" class="swatch">
+					<button id="sw_197">Santorini</button>
+				</div>
+				<div id="s_1_5" class="swatch">
+					<button id="sw_172">Jervois</button>
+					<button id="sw_186">Richmond</button>
+					<button id="sw_185">Thorndon</button>
+					<button id="sw_185">Sumner</button>
+				</div>
+			</div>
+			<div id="s_2" class="swatchlist">
+				<button id="crt_2" class="mainbut mainbut_on">Choose A Roof Tile</button>
+				<button id="crc_2" class="mainbut mainbut_on">Choose A Colour - Showing Standard Range</button>
+				<button id="crx_2" class="mainbut close" onClick="paneloff()"></button>
+				<div id="s_2_0" class="swatch">
+					<button id="sw_3_20" onClick="sel('s_2_1','s_2_0','Choose A Colour - Showing Horizon Range')">Horizon</button>
+					<button id="sw_3_22" onClick="sel('s_2_2','s_2_0','Choose A Colour - Showing Hacienda Range')">Hacienda</button>
+					<button id="sw_3_24" onClick="sel('s_2_3','s_2_0','Choose A Colour - Showing Modern French Range')">Modern French</button>
+					<button id="sw_3_25" onClick="sel('s_2_4','s_2_0','Choose A Colour - Showing Portuguese Range')">Portuguese</button>
+					<button id="sw_3_26" onClick="sel('s_2_5','s_2_0','Choose A Colour - Showing Royalcoppo Range')">Royalcoppo</button>
+					<button id="sw_3_37" onClick="sel('s_2_6','s_2_0','Choose A Colour - Showing Nouveau Range')">Nouveau</button>
+				</div>
+				<div id="s_2_1" class="swatch">
+					<button id="sw_209">Antique Olive</button>
+					<button id="sw_210">Caper</button>
+					<button id="sw_215">Cashew</button>
+					<button id="sw_208">Dark Brown</button>
+					<button id="sw_213">Desert</button>
+					<button id="sw_212">Hapuka</button>
+					<button id="sw_217">Kava</button>
+					<button id="sw_211">Orange Peel</button>
+					<button id="sw_207">Paprika</button>
+					<button id="sw_214">Sambuca</button>
+					<button id="sw_216">Slate</button>
+					<button id="sw_206">Wild Rice</button>
+				</div>
+				<div id="s_2_2" class="swatch">
+					<button id="sw_219">Antique Olive</button>
+					<button id="sw_220">Caper</button>
+					<button id="sw_349">Cashew</button>
+					<button id="sw_224">Dark Brown</button>
+					<button id="sw_226">Desert</button>
+					<button id="sw_221">Hapuka</button>
+					<button id="sw_348">Kava</button>
+					<button id="sw_225">Orange Peel</button>
+					<button id="sw_223">Paprika</button>
+					<button id="sw_222">Sambuca</button>
+					<button id="sw_227">Slate</button>
+					<button id="sw_218">Wild Rice</button>
+				</div>
+				<div id="s_2_3" class="swatch">
+					<button id="sw_232">Earth</button>
+					<button id="sw_240">Granite</button>
+					<button id="sw_234">Florence Red</button>
+					<button id="sw_241">Charcoal</button>
+					<button id="sw_239">Mystic Grey</button>
+					<button id="sw_236">Sepia</button>
+				</div>
+				<div id="s_2_4" class="swatch">
+					<button id="sw_243">Natural</button>
+					<button id="sw_242">Classico Antique</button>
+					<button id="sw_244">Neo Gothic</button>
+				</div>
+				<div id="s_2_5" class="swatch">
+					<button id="sw_245">Natural</button>
+				</div>
+				<div id="s_2_6" class="swatch">
+					<button id="sw_246">Cashmere</button>
+					<button id="sw_248">Sabre</button>
+					<button id="sw_247">Onyx</button>
+				</div>
+			</div>
+			<div id="s_3" class="swatchlist">
+				<button id="crt" class="mainbut">Choose A sBrick Range</button>
+				<button id="crc" class="mainbut mainbut_on">Choose A Colour - Showing Horizon Range</button>
+				<button id="crx" class="mainbut" onClick="paneloff()"></button>
+				<div id="s_3_1" class="swatch">
+					<button id="sw_320">Titania<div></div></button>
+					<button id="sw_300">Bone White<div></div></button>
+					<button id="sw_303">Desert Sand<div></div></button>
+					<button id="sw_317">Smooth Cream<div></div></button>
+					<button id="sw_298">Stone<div></div></button>
+					<button id="sw_299">Ebony<div></div></button>
+					<button id="sw_315">Sandstone Grey<div></div></button>
+					<button id="sw_321">Ironsand<div></div></button>
+					<button id="sw_304">Grey Friars<div></div></button>
+					<button id="sw_305">Gull Grey<div></div></button>
+					<button id="sw_310">New Denim Blue<div></div></button>
+					<button id="sw_311">Pacific Blue<div></div></button>
+					<button id="sw_318">Storm<div></div></button>
+					<button id="sw_306">Karaka<div></div></button>
+					<button id="sw_312">Permanent Green<div></div></button>
+					<button id="sw_314">Rivergum<div></div></button>
+					<button id="sw_307">Lichen<div></div></button>
+					<button id="sw_309">Mist Green<div></div></button>
+					<button id="sw_308">Lignite<div></div></button>
+					<button id="sw_313">Pioneer Red<div></div></button>
+					<button id="sw_316">Scoria<div></div></button>
+					<button id="sw_319">Terracotta<div></div></button>
+				</div>
+				<div id="s_3_2" class="swatch">
+					<button id="sw_317">Smooth Cream<div></div></button>
+					<button id="sw_298">Stone<div></div></button>
+					<button id="sw_299">Ebony<div></div></button>
+					<button id="sw_315">Sandstone Grey<div></div></button>
+					<button id="sw_321">Ironsand<div></div></button>
+					<button id="sw_304">Grey Friars<div></div></button>
+					<button id="sw_305">Gull Grey<div></div></button>
+					<button id="sw_306">Karaka<div></div></button>
+					<button id="sw_307">Lichen<div></div></button>
+					<button id="sw_309">Mist Green<div></div></button>
+					<button id="sw_308">Lignite<div></div></button>
+					<button id="sw_316">Scoria<div></div></button>
+					<button id="sw_319">Terracotta<div></div></button>
+				</div>
+				<div id="s_3_2" class="swatch">
+					<button id="sw_250">Bond Rivergum<div></div></button>
+					<button id="sw_249">Arctic White<div></div></button>
+					<button id="sw_251">Bronco<div></div></button>
+					<button id="sw_252">Canvas Cloth<div></div></button>
+					<button id="sw_253">Mannex Charcoal<div></div></button>
+					<button id="sw_254">Matt Desert Sand<div></div></button>
+					<button id="sw_255">Matt Grey Friars<div></div></button>
+					<button id="sw_256">Matt Charcoal<div></div></button>
+					<button id="sw_257">Matt Karaka<div></div></button>
+					<button id="sw_258">Matt Lichen<div></div></button>
+					<button id="sw_259">Matt Black<div></div></button>
+					<button id="sw_260">Matt Mist Green<div></div></button>
+					<button id="sw_261">New Denim Blue<div></div></button>
+					<button id="sw_262">Off White<div></div></button>
+					<button id="sw_263">Permanent Green<div></div></button>
+					<button id="sw_268">Window Bronze<div></div></button>
+					<button id="sw_266">Matt Sandstone<div></div></button>
+					<button id="sw_264">Silver Pearl<div></div></button>
+					<button id="sw_265">Rivergum Beige<div></div></button>
+					<button id="sw_270">Warm White Pearl<div></div></button>
+					<button id="sw_269">Silver Star<div></div></button>
+					<button id="sw_267">Matt Scoria<div></div></button>
+					<button id="sw_272">Matt Ironsand<div></div></button>
+					<button id="sw_271">Matt Titania<div></div></button>
+				</div>
+			</div>
+			<!--div id="s_3" class="swatch">ROOFS x38</div>
+			<div id="s_4" class="swatch">FASCIA/GUTTER/GARAGE DOOR/FRONT DOOR</div>
+			
+			<div id="s_5" class="swatch">PORCH FEATURE AREA</div>
+			<div id="s_6" class="swatch">JOINERY</div-->
+		</div>
+		<div id="controls" class="controls">
+			&nbsp;&nbsp;SELECT YOUR&nbsp;&nbsp;
+			<button id="c_3_3" onClick="sl(this.id)">Roof</button>
+			<button id="c_1_1" onClick="sl(this.id)">Walls</button>
+			<button id="c_1_2" onClick="sl(this.id)">Feature Wall</button>
+			<button id="c_9_9" onClick="sl(this.id)">Feature Porch</button>
+			<button id="c_7_7" onClick="sl(this.id)">Garage Door</button>
+			<button id="c_4_4" onClick="sl(this.id)">Fascia</button>
+			<button id="c_6_6" onClick="sl(this.id)">Joinery</button>
+			<button id="c_8_8" onClick="sl(this.id)">Front Door</button>
+		</div>
+		<button id="h_s" class="mainbut" onClick="phonehome()">Home & Save</button>
+	</div>
+  </body>
+  	<script type="text/javascript"></script>
+</html>

@@ -1,0 +1,41 @@
+#!/bin/bash
+# Move and resize renders from first house to necessary positions
+fname="productTypes.txt"
+relswatchpth="../../../Visualiser_Offline/"
+rendertarget="../r/tmp/"
+numfld=0;
+color=25;
+render=27;
+grup=13;
+swatch=21;
+prty=2;
+prid=19;
+swatchoffs=0;
+swatchoffsincr=38;
+
+# functions for field extraction
+function fl {
+	#current line
+	echo "$line"|cut -f$1
+}
+function fl0 {
+	#current line
+	echo "$l0"|cut -f$1
+}
+
+while read line
+do   
+	#for safety convert spaces to pipes, and the convert tabs to spaces 
+	l=$(echo "$line"|sed -e 's/\ /\|/g'|sed -e 's/[\t]/\ /g')
+	if [ $numfld = 0 ] ; then
+		arr=($l)
+		numfld=${#arr[@]}
+	else
+		prodid=$(fl $prid)
+		swatchimg=$(fl $render)
+		if [ $swatchimg> 0 ] ; then
+			cp $relswatchpth$(fl $render) $rendertarget$(fl $prty)_$prodid'.png'
+		fi
+	fi
+done < $fname
+echo Completed!

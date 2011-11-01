@@ -1,0 +1,7 @@
+#!/bin/bash
+# Full Build Process
+cp 1.html i.html;
+sh make_swatch_html.sh >>i.html;
+cat 3.html>>i.html;
+cp i.html ../web/
+	
