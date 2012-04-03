@@ -1,0 +1,63 @@
+mkdir -p "usb/Arctic White - Standard";
+mkdir -p "usb/Bianca - Standard";
+mkdir -p "usb/Desert Sand - Standard";
+mkdir -p "usb/Golden Buff - Standard";
+mkdir -p "usb/Harvest Cream - Standard";
+mkdir -p "usb/Heatherstone - Standard";
+mkdir -p "usb/Iron - Standard";
+mkdir -p "usb/Kiln Run Brown - Standard";
+mkdir -p "usb/Kiln Run Red - Standard";
+mkdir -p "usb/Nickel - Standard";
+mkdir -p "usb/Okura Cream - Standard";
+mkdir -p "usb/Omaha - Standard";
+mkdir -p "usb/Palladium - Standard";
+mkdir -p "usb/Red - Standard";
+mkdir -p "usb/Redbourne - Standard";
+mkdir -p "usb/Rumbled Buff - Standard";
+mkdir -p "usb/Rumbled Red - Standard";
+mkdir -p "usb/Rumbled Grey - Standard";
+mkdir -p "usb/Saddlebrown - Standard";
+mkdir -p "usb/Sahara - Standard";
+mkdir -p "usb/Smooth Red Blend - Standard";
+mkdir -p "usb/Soapstone - Standard";
+mkdir -p "usb/Steel - Standard";
+mkdir -p "usb/Albacore - Mezzo";
+mkdir -p "usb/Hoki - Mezzo";
+mkdir -p "usb/Mako - Mezzo";
+mkdir -p "usb/Nautilus - Mezzo";
+mkdir -p "usb/Oyster - Mezzo";
+mkdir -p "usb/Cavalli Grey - Presto";
+mkdir -p "usb/Kawau Cream - Presto";
+mkdir -p "usb/Matakana Cream - Presto";
+mkdir -p "usb/Skipjack - Presto";
+mkdir -p "usb/Santorini - Block";
+mkdir -p "usb/Jervois - Metro";
+mkdir -p "usb/Richmond - Metro";
+mkdir -p "usb/Thorndon - Metro";
+mkdir -p "usb/Sumner - Metro";
+
+
+composite -compose Atop -tile mortar_cream.png standard/standard_cut.png standard/mortar_cream.png
+composite -compose Atop -tile mortar_dark.png standard/standard_cut.png standard/mortar_dark.png
+composite -compose Atop -tile mortar_standard.png standard/standard_cut.png standard/mortar_standard.png
+composite -compose Atop -tile mortar_white.png standard/standard_cut.png standard/mortar_white.png
+composite -compose Atop -tile mortar_cream.png mezzo/mezzo_cut.png Mezzo/mortar_cream.png
+composite -compose Atop -tile mortar_dark.png mezzo/mezzo_cut.png Mezzo/mortar_dark.png
+composite -compose Atop -tile mortar_standard.png mezzo/mezzo_cut.png Mezzo/mortar_standard.png
+composite -compose Atop -tile mortar_white.png mezzo/mezzo_cut.png Mezzo/mortar_white.png
+composite -compose Atop -tile mortar_cream.png presto/presto_cut.png Presto/mortar_cream.png
+composite -compose Atop -tile mortar_dark.png presto/presto_cut.png Presto/mortar_dark.png
+composite -compose Atop -tile mortar_standard.png presto/presto_cut.png Presto/mortar_standard.png
+composite -compose Atop -tile mortar_white.png presto/presto_cut.png Presto/mortar_white.png
+composite -compose Atop -tile mortar_cream.png block/block_cut.png Block/mortar_cream.png
+composite -compose Atop -tile mortar_dark.png block/block_cut.png Block/mortar_dark.png
+composite -compose Atop -tile mortar_standard.png block/block_cut.png Block/mortar_standard.png
+composite -compose Atop -tile mortar_white.png block/block_cut.png Block/mortar_white.png
+composite -compose Atop -tile mortar_cream.png metro/metro_cut.png Metro/mortar_cream.png
+composite -compose Atop -tile mortar_dark.png metro/metro_cut.png Metro/mortar_dark.png
+composite -compose Atop -tile mortar_standard.png metro/metro_cut.png Metro/mortar_standard.png
+composite -compose Atop -tile mortar_white.png metro/metro_cut.png Metro/mortar_white.png
+
+composite -compose Atop -tile mortarcolour.png mortarshape.png mortarout.png
+Stamp this over the mortarless bitmaps
+composite -compose Over -tile mortarout.png bricknomortar.png brickout.png

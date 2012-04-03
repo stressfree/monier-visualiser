@@ -1,0 +1,13 @@
+convert nouveau_.png nouveau_.png +append m.png
+convert m.png m.png +append m.png
+convert m.png m.png +append m.png
+convert m.png m.png +append m.png
+convert m.png -crop 1000x267+84+0 +repage m0.png
+convert m0.png m0.png -append m1.png
+convert m1.png m1.png -append m1.png
+convert m1.png -resize 2696x1077! m2.png
+identify m2.png
+convert m2.png -crop 674x1077+0+0 +repage nouveau_disp.png
+# rm m.png m1.png m0.png m2.png
+ 
+#168*267

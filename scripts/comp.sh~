@@ -1,0 +1,15 @@
+#!/bin/bash
+# Composite temp 'renders' as placeholders for house
+# This tiles using 
+# default path variables if not passed in argument
+# Usage : sh comp.sh [swatch] [mask] [target_folder]
+
+if [ -z $1 ] ; then s='../../../Visualiser_Offline/products/'; else s=$1;  fi
+if [ -z $2 ] ; then m='../r/2_1_1/comp/'                       ; else m=$2;  fi
+if [ -z $3 ] ; then t='../r/2_1_1/'                          ; else t=$3;  fi
+
+
+function cmp {
+	composite -compose Atop -tile $1 $2 $3
+}
+cmp $s'swatches/d9687142-ae5d-4376-a2fc-ab4848421efc.jpg' $m'6.png' $t'6_250.png';

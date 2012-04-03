@@ -1,0 +1,11 @@
+#!/bin/bash
+# arguments given are for % opacity of white and black respectively
+for file in ./fill/*.png
+do   
+#   echo $file
+  fn=$(echo "$file"|sed -e "s/\.\/fill\///g")
+   echo "composite -dissolve $1% \"./fill/$fn\" ./fill/white.gif tmp0.png"|sh
+  echo "composite -dissolve $2% ./fill/whitebump.png tmp0.png tmp1.png"|sh
+  echo "composite -dissolve $3% ./fill/blackbump.png tmp1.png \"$fn\""|sh
+done
+rm tmp1.png tmp0.png

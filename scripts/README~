@@ -1,0 +1,22 @@
+This directory is for any 3D model/rendering related scripts.
+i.e. Anything that happens behind the scenes that shouldn't go on the web.
+
+Directory of Significant Contents....
+
+Scripts for regular re-use
+== Name =============== Used For ====================
+resize.sh               resizes master images for other resolutions
+comp.sh                 Composite temp 'renders' as placeholders for a new model being processed
+
+
+
+Scripts for use one time or few time
+== Name =============== Used For ====================
+renders.sh              processing render images from original visualiser to preferred new locations
+productTypes.sh         process swatches from original visualiser to generate Swatches and CSS
+make_swatch_html.sh     Generate html body for swatches for the main bit of index.html
+build_all.sh            Assembles complete index.html 
+
+
+productTypes.txt = adapted export of the xml file from original visualiser -used as a listing for stuff migrated from there
+
